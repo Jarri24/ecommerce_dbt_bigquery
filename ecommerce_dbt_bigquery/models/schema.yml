@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: metricas_ciudades
+    description: "Métricas agregadas de facturación y pedidos por ciudad de destino"
+    columns:
+      - name: ciudad_envio
+        description: "Ciudad destino del pedido"
+        tests:
+          - unique
+          - not_null
+
+      - name: total_pedidos
+        description: "Cantidad de órdenes únicas"
+        tests:
+          - not_null

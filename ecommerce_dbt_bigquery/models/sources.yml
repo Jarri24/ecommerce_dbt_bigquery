@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: raw_ecommerce
+    database: ferrous-aleph-507816-i4
+    schema: ecommerce_analytics
+    tables:
+      - name: ventas_cloud
